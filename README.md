@@ -20,7 +20,8 @@
 
 ## 🎯 profiles  
 
-- [Create a new profile][POST](http://127.0.0.1:3000/profiles)
+1. [Create a new profile][POST]
+- http://127.0.0.1:3000/profiles
 # 📝 Sample request body
 {
     "name": "PROSPER ASIIMWE",
@@ -35,24 +36,29 @@
     "image": "https://www.gravatar.com/avatar/2c7d99fe281ecd3bcd65ab915bac6dd5?s=250"
 }
 
-- [Fetch profile by id and render it onto template][GET](http://127.0.0.1:3000/profiles/63f5e7170a136fbf67b2e3c6)
+2. [Fetch profile by id and render it onto template][GET]
+- http://127.0.0.1:3000/profiles/63f5e7170a136fbf67b2e3c6
 
 ⭐️ Replace 63f5e7170a136fbf67b2e3c6 with a valid profile _id
 
-- [Fetch all profiles][GET](http://127.0.0.1:3000/profiles)         
+3. [Fetch all profiles][GET]
+- http://127.0.0.1:3000/profiles         
 
 ## 🎯 users  
-- [Create a new user][POST](http://127.0.0.1:3000/users)
+4. [Create a new user][POST]
+- http://127.0.0.1:3000/users
 
 # 📝 Sample request body
 {
     "name": "MARCUS RASHFORD"
 }
 
-- [Fetch all users][GET](http://127.0.0.1:3000/users)  
+5. [Fetch all users][GET]
+- http://127.0.0.1:3000/users  
 
 ## 🎯 comments  
-- [Create a new comments][POST](http://127.0.0.1:3000/comments)
+6. [Create a new comments][POST]
+- http://127.0.0.1:3000/comments
 
 # 📝 Sample request body
 {
@@ -61,23 +67,29 @@
     "content": "Amazing personality, I would totally recommend you date him."
 }
 
-- [Fetch all comments][GET](http://127.0.0.1:3000/comments)  
+7. [Fetch all comments][GET]
+- http://127.0.0.1:3000/comments  
 
-- [Fetch all comments by user id][GET](http://127.0.0.1:3000/comments/user/63f5ed648c5855e19d0c37f9)  
+8. [Fetch all comments by user id][GET]
+- http://127.0.0.1:3000/comments/user/63f5ed648c5855e19d0c37f9  
 
 ⭐️ Replace 63f5ed648c5855e19d0c37f9 with a valid user _id
 
-- [Fetch all comments by profile id][GET](http://127.0.0.1:3000/comments/profile/63f5ed808c5855e19d0c37fe) 
+9. [Fetch all comments by profile id][GET]
+- http://127.0.0.1:3000/comments/profile/63f5ed808c5855e19d0c37fe
 
 ⭐️ Replace 63f5ed808c5855e19d0c37fe with a valid profile _id
 
-- [Fetch all comments sorted by date in descending order][GET](http://127.0.0.1:3000/comments/sort/date) 
+11. [Fetch all comments sorted by date in descending order][GET]
+- http://127.0.0.1:3000/comments/sort/date 
 
-- [Fetch all comments filtered by content][GET](http://127.0.0.1:3000/comments/filter-by-content?content=Amazing) 
+12. [Fetch all comments filtered by content][GET]
+- http://127.0.0.1:3000/comments/filter-by-content?content=Amazing 
 
 ⭐️ ?content=Amazing is the query param
 
-- [Like a comment][PUT](http://127.0.0.1:3000/comments/like)
+13. [Like a comment][PUT]
+- http://127.0.0.1:3000/comments/like
 
 # 📝 Sample request body
 {
@@ -85,7 +97,8 @@
   "commentId": "63f4d032fcb3959a328b0ea1"
 }
 
-- [Unlike a comment][PUT](http://127.0.0.1:3000/comments/unlike)
+14. [Unlike a comment][PUT]
+- (http://127.0.0.1:3000/comments/unlike)
 
 # 📝 Sample request body
 {
